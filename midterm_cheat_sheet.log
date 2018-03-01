@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 FEB 2018 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 FEB 2018 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -433,12 +433,34 @@ Overfull \hbox (0.33484pt too wide) in paragraph at lines 171--180
  []
 
 
-Overfull \hbox (39.85059pt too wide) in paragraph at lines 226--285
+Overfull \hbox (3.77788pt too wide) in paragraph at lines 216--226
 []  
  []
 
 
-Overfull \hbox (113.52983pt too wide) in paragraph at lines 286--348
+Overfull \hbox (40.28264pt too wide) in paragraph at lines 236--265
+[]  
+ []
+
+
+Overfull \hbox (31.57904pt too wide) in paragraph at lines 268--289
+[]  
+ []
+
+
+Overfull \hbox (5.32182pt too wide) in paragraph at lines 293--328
+[]  
+ []
+
+[1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (39.85059pt too wide) in paragraph at lines 394--453
+[]  
+ []
+
+
+Overfull \hbox (11.02615pt too wide) in paragraph at lines 454--515
 [][]  
  []
 
@@ -449,30 +471,36 @@ Overfull \vbox (12.90225pt too high) has occurred while \output is active []
 Overfull \vbox (12.90225pt too high) has occurred while \output is active []
 
 
-[1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \vbox (4.25427pt too high) has occurred while \output is active []
-
-
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Overfull \hbox (150.94553pt too wide) in paragraph at lines 516--599
+[][]  
+ []
+
+
+Overfull \vbox (13.8343pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (215.67482pt too high) has occurred while \output is active []
+
+
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
  (./midterm_cheat_sheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `midterm_cheat_sheet.out' has not changed.
-(rerunfilecheck)             Checksum: F99215A617222F327BA763E8C789CA58;1381.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+(rerunfilecheck)             Checksum: C62ACCF4A37025F09B765F1CD6B19AB7;2323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 6836 strings out of 492995
- 101221 string characters out of 6132704
- 228264 words of memory out of 5000000
- 10314 multiletter control sequences out of 15000+600000
+ 6861 strings out of 492995
+ 101515 string characters out of 6132704
+ 249624 words of memory out of 5000000
+ 10326 multiletter control sequences out of 15000+600000
  8574 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,30p,237b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,30p,237b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -484,12 +512,13 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on midterm_cheat_sheet.pdf (2 pages, 165516 bytes).
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on midterm_cheat_sheet.pdf (3 pages, 196146 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

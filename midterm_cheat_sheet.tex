@@ -211,17 +211,184 @@ $ r_c\approx exp[2V_{bn}\sqrt{\epsilon_sm^*_e/N_D}/(h^{\prime})]$ \textbf{(53)}\
 
 
 \subsection{3.5 - MIS Junction and Field-Effect Properties}
-$ $ \textbf{(54)} \\
+$ V_{FB}=[\Phi_m-\Phi_s-(E_c-E_f)]/q$ \textbf{(54)} \\
 \subsubsection{Surface Inversion}
 \begin{tabular}{@{}ll@{}}
-$ $ \textbf{(55)} \\
-$ $ \textbf{(56)} \\
-$ $ \\
-$ $ \\
+$ V_m=V_s+\sqrt{2\epsilon_sqN_AV_s}/C_i$ \textbf{(55)} \\
+$ n_s=n_{p0}exp(V_s/V_t)$ \textbf{(56)} \\
+$ p_s=p_{p0}exp(-V_s/V_t)$ \\
+$ V_t=kT/q$ \\
+$ \acute E_s=\sqrt{2}(V_t/L_{D_p})\cdots$ \textbf{(57)} \\
+$\cdot\sqrt{[exp(-V_s/V_t)+V_s/V_t-1]n_{p0}/p_{p0}[exp(V_s/V_t)-V_s/V_t-1]}$ \\
+$ V_a=2\phi_b-\sqrt{4qN_A\phi_b\epsilon_s}/C_i$ \textbf{(58)} \\
+$ V^*_T=V_T+V_{FB}+V_{sc}+V_{sub}$ \textbf{(59)} \\
+\end{tabular}
+
+
+\subsubsection{Capacitance Effect in a MIS Junction}
+\begin{tabular}{@{}ll@{}}
+$ C_{mis}=C_iC_{depl}/(C_i+C_{depl})$ \textbf{(60)} \\
+\end{tabular}
+
+
+\subsection{3.7 - Structure and Operations of Transistors}
+\subsubsection{Field-Effect Transistors (FETs)}
+\begin{tabular}{@{}ll@{}}
+$ Q_s=-C_i[V_g-2\phi_b-V_{FB}-V_c(x)]$ \textbf{(61)} \\
+$ n_{ss}(x)=Q_s-\sqrt{2\epsilon_sqN_A(V_c(x)+2\phi_b)}$ \textbf{(62)} \\
+$ I_{ds}=qn_{ss}W_c\mu_ndV_c(x)/dx$ \textbf{(63)} \\
+$ I_{ds}=(\mu_nW_c/L)C_i \{ (V_g-V_{FB}-2\phi_b-V_{ds}/2)-(2/3)\cdots$ \textbf{(64)} \\
+$ \cdot[\sqrt{2\epsilon_sqN_A}/C_i][(V_{ds}+2\phi_b)^{3/2}-(2\phi_b)^{3/2}] \}$ \\
+$ V_{ds}=V_g-V_T$ \textbf{(65)} \\
+$ V_T=V_{FB}+2\phi_b+V_{sc}+\sqrt{2\epsilon_sqN_A(2\phi_b-V_{sub})}/C_i$ \textbf{(66)} \\
+$ I_{ds}\approx \beta_0(V_g-V_T)V_{ds}$ \textbf{(67)} \\
+$ \beta_0=\mu_nC_iW_c/L$ \\
+$ I_{D_{sat}}\approx \beta_0(V_g-V_T)^2/2$ \textbf{(68)} \\
+$ g_m=\beta_0(V_g-V_T)$ \textbf{(69)} \\
+$ I_{ds}=I_{D_{sat}}tanh(g_{ds}V_{ds}/I_{D_{sat}})[1+\gamma^{\prime}V_{ds}]$ \textbf{(70)} \\
+$ \Delta I_{ds}=g_m\Delta V_g=\beta_0(V_g-V_T)\Delta V_g$ \textbf{(71)} \\
+$ G_v=\beta_0(V_g-V_T)R_L$ \textbf{(72)} \\
+$ \Delta V=I_{ds}\Delta x/[q\mu_nN_DW_c(t_c-a_d(x))]$ \textbf{(73)} \\
+$ a_d(x)=2\epsilon_s(V(x)+V_{bi}-V_g)/(qN_D)$ \\
+$ I_{ds}=g_0[V_{ds}-2((V_{ds}+V_{bi}-V_g)^{3/2}-(V_{bi}-V_g)^{3/2})/(3\sqrt{V_{po}})]$ \textbf{(74)} \\
+$ g_m=g_0(\sqrt{V_{ds}+V_{bi}-V_g}-\sqrt{V_{bi}-V_g}/\sqrt{V_{po}})$ \textbf{(75)} \\
+$ V_{D_{sat}}=V_{po}-V_{bi}+V_g$ \\
+$ I_{D_{sat}}=g_0(V_{po}/3+2(V_{bi}-V_g)^{3/2}/(3\sqrt{V_{po}})-V_{bi}+V_g)$ \textbf{(76)} \\
+$ g_m=g_0[1-\sqrt{(V_{bi}-V_g)/V_{po}}]$ \\
+$ I_{ds}=\beta^{\prime}(V_g-V_T)^2(1+\gamma^{\prime}V_{ds})tanh(g_0V_{ds}/I_{D_{sat}})/[1+b(V_g-V_T)]$ \textbf{(77)} \\
+$ \beta^{\prime}=\mu_n\epsilon_sW/(t_cL)$ \\
+$ V_T=V_{bi}-V_{po}$ \\
+$ I_{gate}=I_{gs}+I_{gd}$ \textbf{(78)} \\
+$ I_{gs}=I_{go}exp\{[V_{gs}-I_gR_g-(I_{ds}+I_{gs})R_s](\eta_gV_{th})\}$ \\
+$ I_{gd}=I_{go}exp\{[V_{gd}-I_gR_g-(I_{ds}+I_{gd})R_s](\eta_gV_{th})\}$ \\
+\end{tabular}
+
+
+\subsubsection{Bipolar Junction Transistor (BJT)}
+\begin{tabular}{@{}ll@{}}
+$ D_{pb}d^2(p_b(x)-p_{n0})/dx^2-(p_b(x)-p_{n0})/\tau_p=0$ \textbf{(79)} \\
+$ p_b(x)=p_{n0}+A_{b1}exp(x/L_{pb})+A_{b2}exp(-x/L_{pb})$ \textbf{(80)} \\
+$ p_b(x)=p_{n0}[exp(V_a/V_t-1)]sinh[(W^{\prime}-x/L_{pb})]/sinh[W^{\prime}/L_{pb}]$ \textbf{(81)} \\
+$ \cdots +p_{n0}[1-sinh(x/L_{pb})/sinh(W^{\prime}/L_{pb})]$ \\
+$ p_b(x)\approx p_{n0}[exp(V_a/V_t-1)][1-x/W^{\prime}]$ \textbf{(82)} \\
+$ I_{pb}=-qD_{pb}d(p_b(x))/dxA_{cs}=qD_{pb}p_{n0}[exp(V_a/V_t-1)]A_{cs}/W^{\prime}$ \textbf{(83)} \\
+$ n_e(x)=n_{p0}+n_{p0}[exp(V_a/V_t)-1]exp[(x+x_e)/L_{ne}]$ \textbf{(84)} \\
+$ n_c(x)=n_{p0}+n_{p0}[exp(-(x-x_c)/L_{nc})]$ \\
+$ I_{ne}=qD_{ne}n_{p0}A_{cs}[exp(V_a/V_t-1)]/L_{ne}$ \textbf{(85)} \\
+$ I_{nc}=qD_{nc}n_{p0}A_{cs}/L_{nc}$ \\
+During device operation:
+$ I_e\approx I_{ne}$ \\
+$ I_c=I_{nc}$ \textbf{(86)} \\
+$ I_b=I_{pb}$ \\
+$ \beta_g\approx D_{pb}N_{Ae}x_e/(D_{ne}N_{Db}W^{\prime})$ \textbf{(87)} \\
+$ Q_G=\int_0^{W^{\prime}}[N_{Db}(x)]dx\approx W^{\prime}N_{Db}$ \textbf{(88)} \\
+$ n_b(0)=p_b(0)\approx n_iexp(V_a/2V_t)$ \textbf{(89)} \\
+$ I_e\approx I_c\approx (qn_iD_{pb}A_{cs}/W^{\prime})exp(V_a/2V_t)$ \textbf{(90)} \\
+$ I_b\approx qD_{ne}n^2_iA_{cs}/(x_eN_{Ae})exp(V_a/V_t)$ \\
+\end{tabular}
+
+
+\subsection{3.8 - Nonideal Effects and Other Performance Parameters}
+\subsubsection{MOSFETs}
+\begin{tabular}{@{}ll@{}}
+$ \mu^*=\mu_0/(1+\mu_0 \acute{E}/v_s)$ \textbf{(91)} \\
+$ I_{ds}=qn_{ss}v_n(\acute{E})W_c$ \textbf{(92)} \\
+$ V_c(x)=V_{gt}-\sqrt{V^2_{gt}-2I_{ds}x/\beta_0L}$ \textbf{(93)} \\
+$ V_{gt}=V_g-V_T$ \\
+$ \beta_0=\mu^*C_iW_c/L$ \\
+$ I_{D_{sat}}=\beta_{sl}V^2_{sl}[\sqrt{(1+(V_{gt}/V_{sl}))^2}-\beta_{sl}V^2_{sl}]$ \textbf{(94)} \\
+$ V_{sl}=\acute{E}_pL$ \\
+$ I_{sub}=-qA_{cs}D_n\Delta n/\Delta x$ \textbf{(95)} \\
+$ =\epsilon_s\mu_n(W_c/L)V^2_t(n_i/N_A)^2\sqrt{V_t/V_s}exp(V_s/V_t)\cdots$ \\
+$\cdot[1-exp(-V_{ds}/V_t)]/(\sqrt{2}L_{Dp})$ \\
+In saturation, these capacitances are given by:\\
+$ C_{gs}=C_{gsf}+2C_iW_cL/3$ \\
+$ C_{gd}=C_{gdf}$ \\
+$ C_{gb}=0$ \\
+$ C_{bs}=C_{js}(1+\frac{2}{3}C_{gb}/C_{js}W_cL)/(1+V_{sub-s}/\phi_{bi})^{mB}$ \\
+$ C_{bd}=C_{jd}/(1+V_{sub-d}/\phi_{bi})^{mB}$ \textbf{(96)} \\
+In the linear regime, the same parameters are given by:\\
+$ C_{gs}=C_{gsf}+\frac{2}{3}C_iW_cLV_{D_{sat}}(3V_{D_{sat}}-2V_{ds})/(2V_{D_{sat}}-V_{ds})^2$ \\
+$ C_{gs}=C_{gdf}+\frac{2}{3}C_iW_cL(V_{D_{sat}}-V_{ds})(3V_{D_{sat}}-V_{ds})\cdots$ \\
+$/(2V_{D_{sat}}-V_{ds})^2$ \\
+$ C_{gb}=0$ \textbf{(97)} \\
+$ C_{bs}=C_{js}[1+\frac{2}{3}C_{gb}/C_{js}W_cLV_{D_{sat}}(3V_{D_{sat}}-2V_{ds})\cdots$ \\
+$/(2V_{D_{sat}}-V_{ds})^2]/(1+V_{sub-s}/\phi_{bi})^{mB}$ \\
+$ C_{bd}=C_{jd}[1+\frac{2}{3}C_{gb}/C_{js}W_cL(V_{D_{sat}}-V_{ds})(3V_{D_{sat}}-V_{ds})\cdots$ \\
+$/(2V_{D_{sat}}-V_{ds})^2]/(1+V_{sub-s}/\phi_{bi})^{mB}$ \\
+$ f_T=g_m/[2\pi (C_g+C_p)]$ \textbf{(98)} \\
+$ \Delta V_{TE}=\Delta V_{bi}+q\Delta n_A/C_i$ \textbf{(99)} \\
+$ \Delta V_{TD}=\Delta V_{bi}-\Phi_x/q-q\Delta n_D/C_i$ \\
+$ \hat{i}^2_{th}=4kTg_{do}$ \textbf{(100)} \\
+$ C^{\prime}=C_i/k^*$ \\
+$ I^{\prime}_{D_{sat}}=I_{D_{sat}}/k^*$ \textbf{(101)} \\
+$ f^{\prime}_T=k^*f_t$ \\
+$ P^{\prime}_{ac}=P_{ac}/(k^*)^2$ \\
+\end{tabular}
+
+
+\subsubsection{MESFETs}
+\begin{tabular}{@{}ll@{}}
+$ I_{D_{sat}}=\beta^{\prime\prime}(V_G-V_T)^2$ \textbf{(102)} \\
+$ \beta^{\prime\prime}=2\epsilon_s\mu_nv_sW_c/[t_c(\mu_nV_{po}+3v_sL)]]$ \\
+$ V_T=V_{bi}-V_{po}$ \\
+$ C_{gs}=C_{go}/\sqrt{1-V_{gs}/V_{bi}}+\pi\epsilon_sW_c/2$ \textbf{(103)} \\
+$ C_{gd}=C_{go}/\sqrt{1-V_{gd}/V_{bi}}+\pi\epsilon_sW_c/2$ \\
+$ L/t_c<3$ and $N_DL\approx 1.6$ x $10^{23} \mu m/m^3$ \textbf{(104)} \\
 $ $ \\
 $ $ \\
 $ $ \\
 \end{tabular}
+
+
+\subsubsection{BJTs}
+\begin{tabular}{@{}ll@{}}
+$ \Delta E_g=3q^2\sqrt{qN_{De}/\epsilon_s\cdot V_t}/16\pi\epsilon_s$ \textbf{(105)} \\
+$ N_{Ab}\approx N_{Ao}exp[-(x-x_e)/\lambda_b]$ \textbf{(106)} \\
+$ \beta^*\approx\beta_gW^{\prime}/2\lambda_b$ \textbf{(107)} \\
+$ \Delta Q_{bs}=(I_{b1}-I_{b2})\tau_{sr}exp(-t/\tau_{sr})+(I_{b2}-I_{ba})\tau_{sr}$ \textbf{(108)} \\
+$ \tau_s=\tau_{sr}ln[(I_{b1}-I_{b2})/(I_{ba}-I_{b2})]$ \textbf{(109)} \\
+$ f_{\beta}=(C_er_e)/2\pi$ \textbf{(110)} \\
+$ f_{\beta}=g_{b^{\prime}e}/2\pi (C_{b^{\prime}e}+C_{b^{\prime}c})$ \textbf{(111)} \\
+$ f_{tr}=<v>/W^{\prime}$ \textbf{(112)} \\
+$ BV_{cb}=\epsilon_s\acute{E}^2_{cr}/(2qN_{Dc})$ \textbf{(113)} \\
+$ BV_{ce}=BV_{cb}(1-\alpha_g)^{1/mb}$ \textbf{(114)} \\
+$ V_{pt}=qN_{Ab}W^{\prime 2}/(2\epsilon_sN_{Dc})$ \textbf{(115)} \\
+$ \hat{i}^2_1=2q(I_e+2I_b)\partial f$ \textbf{(116)} \\
+$ \hat{i}^2_2=2qI_c\partial f$ \\
+\end{tabular}
+
+
+\subsection{3.9 - New Transistor Structures}
+\subsubsection{Heterojunction Bipolar Transistor (HBT)}
+\begin{tabular}{@{}ll@{}}
+$ \beta_{max}=v_{nb}N_{De}x_e/(v_{pe}N_{Ab}W^{\prime})exp(\Delta E_v/(qV_t))$ \textbf{(117)} \\
+$ \tau_d=2.5R_BC_{b^{\prime}c}+R_B\tau_B/R_L+(3C_{b^{\prime}c}+C_L)R_L$ \textbf{(118)} \\
+$ f_T=1/[2\pi\tau_{tr}(1+C_L/C_g)]$ \textbf{(119)} \\
+$ V_T=\frac{(\Phi_B-\Delta E_c)}{q}-qN_Dd^2_{dd}/(2\epsilon_1)$ \textbf{(120)} \\
+$ V_T=\frac{(\Phi_B-\Delta E_c)}{q}-\frac{qn_sd_d}{\epsilon_1}$ \textbf{(121)} \\
+$ I_{ds}=q\mu_nn_{xs}d(V_a)/dx$ \textbf{(122)} \\
+$ n_{xs}=n_s-\epsilon_1V_a(x)/(qd_{eff})$ \\
+$ I_{ds}=\mu\epsilon_1(W_c/L)[(V_g-V_T)V_{ds}/d_{eff}-V^2_{ds}/(2d_{eff})]$ \textbf{(123)} \\
+$ V_{D_{sat}}=(qn_s/\epsilon_1)(1+a^{\prime}-\sqrt{1+a^{\prime 2}})$ \textbf{(124)} \\
+$ I_{D_{sat}}=qn_s\mu_n\acute{E}_sW_c(\sqrt{1+a^{\prime 2}}-a^{\prime})$ \\
+$ \acute{E}_s=v_s/\mu_n$ \\
+$ a^{\prime}=\epsilon_1v_sL/(qn_s\mu_nd_{eff})$ \\
+\end{tabular}
+
+
+\subsubsection{Amorphous Silicon Thin-Film Transistor (TFT)}
+\begin{tabular}{@{}ll@{}}
+$ Q_D=qg_{vd}E_{donor}exp[(E_v-E_F)/E_{donor}]$ \textbf{(125)} \\
+$ Q_A=qg_{cd}E_{acceptor}exp[(E_F-E_c)/E_{acceptor}]$ \\
+$ E_c-E_{F0}=E_{acceptor}/(E_{acceptor}-E_{donor})\cdots$ \textbf{(126)} \\
+$\cdot [E_g-E_{donor}ln(g_{vd}E_{donor})/(g_{cd}E_{acceptor})]$ \\
+$ I_{ds}=q\mu n_sd(V_a)/dx W_c$ \textbf{(127)} \\
+$ n_{ind}=n_{inds}-\epsilon_iV_a/(qd_i)$ \textbf{(128)} \\
+$ I_{ds}=q\mu^{**}W_c/Ln_{inds}V_{ds}$ \textbf{(129)} \\
+$ V_{D_{sat}}=qn_{inds}d_i/\epsilon_i$ \textbf{(130)} \\
+\end{tabular}
+
 
 \section{Glossary of Variables}
 \begin{tabular}{@{}ll@{}}
@@ -289,24 +456,28 @@ $ \delta f$ is the freq. range in Hz \\
 $ \xi_1$ and $\xi_2$ are the respective electron affinities in the \\
 two semiconductors \\
 $ E_{g1}$ is the E. gap of the narrow-gap p-type semiconductor in eV \\
-$ \Delta E_n$ is the E. difference between the conduction band edge and the Fermi \\
-level in the wide-gap semiconductor in eV \\
-$ \Delta E_p$ is the E. difference between the valence band edge and the Fermi \\
-level in the narrow-gap semiconductor in eV \\
-$ \epsilon_1$ and $\epsilon_2$ are the respective permittivities of the p-type and n-type \\
-semiconductors in F/m \\
+$ \Delta E_n$ is the E. difference between the conduction band edge \\
+and the Fermi level in the wide-gap semiconductor in eV \\
+$ \Delta E_p$ is the E. difference between the valence band edge and \\
+the Fermi level in the narrow-gap semiconductor in eV \\
+$ \epsilon_1$ and $\epsilon_2$ are the respective permittivities of the \\
+p-type and n-type semiconductors in F/m \\
 $ v_x$ is the velocity of the electrons in the +x direction in m/s \\
 $ m^*_e$ is the effective mass of the electrons in kg \\
 $ \langle v_x\rangle$ is the average velocity of electrons in m/s \\
 $ f_{vx}$ is the velocity distribution of the electrons \\
-$ \partial n/\partial E$ is the rate at which the electron density changes with E. band\\
-in $/m^3\cdot eV$  \\
-$ I_{sm}$ is the current of electrons moving from the semiconductor into the metal (pos. value)\\
-$ A^* (=4\pi qm^*_ek^2/h^3=1.2$ x $10^6 A/m^2\cdot K^2$ is called the Richardson constant \\
-$ E_n$ is the E. diff. between the semiconductor Fermi lvl and the conduction band edge in eV \\
+$ \partial n/\partial E$ is the rate at which the electron density changes \\
+with E. band in $/m^3\cdot eV$  \\
+$ I_{sm}$ is the current of electrons moving from the semiconductor \\
+into the metal (pos. value)\\
+$ A^* (=4\pi qm^*_ek^2/h^3=1.2$ x $10^6 A/m^2\cdot K^2$ is called the \\
+Richardson constant \\
+$ E_n$ is the E. diff. between the semiconductor Fermi lvl and the \\
+conduction band edge in eV \\
 $ \Phi_{B}$ is the barrier height in eV \\
 $ E_{\infty}$ is a parameter dependent on the dopant density in J \\
-$ I_f$ is a pre-exponential constant that depends on the field-emission process in A \\
+$ I_f$ is a pre-exponential constant that depends on the \\
+field-emission process in A \\
 $ \Phi_0$ is the location of the surface Fermi level in eV \\
 $ E^{\prime}$ is the electric field in V/m \\
 $ \Delta\Phi_B$ is the resulting lowering in the barrier height in eV \\
@@ -317,7 +488,7 @@ I is the total current flowing across the Schottky junction in A \\
 $a^{\prime}$ is the dopant layer thickness in m \\
 $ n_1$ is the interface dopant density in $/m^3$ \\
 $n_2$ is the substrate donor density in $/m^3$ \\
-W is the depletion-layer width in m
+W is the depletion-layer width in m \\
 $ \Delta d$ is the distance away from the interface in m \\
 $ \Phi^*_B$ is the effective barrier height in m \\
 $ p_1$ is the surface dopant density in $/m^3$ \\
@@ -326,13 +497,92 @@ $ R_c$ is the contact resistance in $\Omega$ \\
 $ R_{sh}$ is the shunt resistance in $\Omega$ \\
 $ r_c$ is the specific contact resistance in $\Omega\cdot m^2$ \\
 $ d_c$ is the width of the contact in m \\
-L is the contact length in m
+L is the contact length in m \\
 $ r_{sheet}$ is the semiconductor sheet resistance in $\Omega$/square \\
 $ L_{sh}$ is the length of the shunt path in m \\
 $ m^*_e$ is the effective mass of the electrons in kg \\
 $ V_{bn} (=\Phi_B/q)$ is in V \\
 $ h^{\prime}$ is Planck's constant divided by $2\pi$ \\
 $ N_D$ is the donor density in $/m^3$ \\
+$V_{FB}$ is the flat-band voltage in V (can be pos. and neg.) \\
+$ \Phi_m$ is the metal work function in eV \\
+$ \Phi_s$ is the semiconductor work function in eV \\
+$ E_c-E_F$ is the E. diff. between the conduction band edge \\
+and the Fermi lvl in the semiconductor in eV \\
+$ V_s$ is the potential at the semiconductor surface in V \\
+$ C_i$ is the oxide capacitance per unit are in $F/m^2$ \\
+\end{tabular}
+
+\begin{tabular}{@{}ll@{}}
+$ n_{p0}$ is the equilib. electron density in the \\
+p-type semiconductor in $/m^3$ \\
+$ p_{p0}$ is the equilib. hole density in the p-type \\
+semiconductor in $/m^3$ \\
+$ p_s$ is the surface charge density for the electrons in $/m^3$ \\
+$ n_s$ is the surface charge density for the holes in $/m^3$ \\
+$ \acute{E_s}$ is the electric field at the semiconductor's surface in V/m \\
+$ L_{D_p}$ is the hole-diffusion length in m \\
+$ V_T$ is the threshold voltage in V \\
+$ V^*_T$ is the modified threshold voltage in V \\
+$ V_{sc}$ is the potential drop due to oxide charges in the insulator in V \\
+$ V_{FB}$ is the flat-band voltage in V \\
+$ V_{sub}$ is the substrate bias voltage in V \\
+$ C_{mis}$ is the MIS junction capacitance in $F/m^2$ \\
+$ C_i$ is the insulator capacitance per unit area in $F/m^2$ \\
+$ C_{depl}$ is the depletion layer in capacitance per unit area in $F/m^2$ \\
+$ Q_s$ is the surface charge density in $C/m^2$ \\
+$ V_g$ is the gate voltage in V \\
+$ 2\phi_b$ is the change in the surface potential in V required to generate strong inversion \\
+$ V_c(x)$ in V is the channel potential, which varies along the length of the channel in the \\
+x direction \\
+$ n_{ss}(x)$ is the effective electron density along the channel in $/m^2$ \\
+$ \mu_n$ is the channel mobility in $m^2/V\cdot s$ \\
+$ dV_c(x)/dx$ is the incremental change in the channel potential divided by \\
+the incremental change in position in V/m \\
+$ W_c$ is the channel width in m \\
+$ V_{ds}$ is the drain-to-source voltage in V \\
+L is the channel length in m
+$ V_g-V_{ds}$ is the voltage drop across the drain-substrate PN junction in V \\
+$ V_T$ is the threshold voltage in V \\
+$ g_m$ is the transconductance of the MOSFET in $/\Omega or S$ \\
+$ \gamma^{\prime}$ is an empirical parameter in /V \\
+$ I_{D_{sat}}$ is the saturation current in A \\
+$ I_{ds}$ is the drain-source current in A \\
+$ G_v (=\Delta I_{ds}R_L/\Delta V_g)$ is the voltage gain \\
+$ R_L$ is the resistive load in $\Omega$ \\
+$ \Delta x$ is the incremental channel length in m \\
+$ W_c$ is the width of the MESFET  in m \\
+$ t_c$ is the thickness of the active layer in m \\
+$ g_0$ is the channel conductance in $\Omega or S$ \\
+$ V_{po} (=qN_Dt^2_c/(2\epsilon_s))$ is the pinch-off voltage in V \\
+$ \gamma^{\prime}$ and $b$ are empirical constants in /V \\
+$ I_{go}$ is the gate saturation current in A \\
+$ R_g$ is the gate resistance in $\Omega$ \\
+$ \eta_g$ is the ideality factor for the gate junction \\
+$ D_{pb}$ is the hole diffusivity in the base in $m^2/s$ \\
+$ p_{n0}$ is the equilibrium hole density in the base in $/m^3$ \\
+$ \tau_p$ is the hole lifetime in s \\
+$ A_{b1}$ and $A_{b2}$ are constants in $/m^3$ \\
+$ L_{pb} (=\sqrt{D_{pb}/\tau_p}$ is the hole diffusion length in the base in m \\
+$ L_{ne}$ and $L_{nc}$ in m are the electron diffusion lengths in the emitter and collector \\
+$ x_e$ and $x_c$ in m are the widths of the base-emitter junc. and base-collector junc. \\
+$ I_{ne}$ and $I_{nc}$ in A are the electron-diffusion currents in the emitter and collector \\
+$ D_{ne}$ and $D_{nc}$ in $m^2/s$ are the diffusivities of the electrons in the \\
+emitter and collector  \\
+$ L_{ne}$ and $L_{nc}$ in m are the diffusion lengths of the electrons in the \\
+emitter and collector \\
+$ N_{Ae}$ is the acceptor density in the emitter in $/m^3$ \\
+$ N_{Db}$ is the donor density in the base in $/m^3$ \\
+$ Q_G$ is the Gummel number in base doping per unit area \\
+$ \beta_g (=\Delta I_c/\Delta I_b)$ is the common-emitter current gain \\
+$ $ \\
+$ $ \\
+$ $ \\
+$ $ \\
+$ $ \\
+$ $ \\
+$ $ \\
+$ $ \\
 $ $ \\
 $ $ \\
 $ $ \\
